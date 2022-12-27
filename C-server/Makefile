@@ -1,5 +1,5 @@
 
-CC=cpp
+CC=gcc
 CFLAGS=-g
 
 all: tcpc
