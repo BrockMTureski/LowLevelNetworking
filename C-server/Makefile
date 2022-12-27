@@ -1,9 +1,11 @@
 
-CC=clang
+CC=cpp
 CFLAGS=-g
 
 all: tcpc
-	$(CC) $(CFLAGS) -o tcpc client.c
+
+tcpc: Client.c
+	$(CC) $(CFLAGS) -o tcpc Client.c
 
 clean:
 	rm -rf *.dSYM tcpc
