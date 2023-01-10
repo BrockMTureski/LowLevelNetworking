@@ -2,9 +2,9 @@
 common header file for web client and server files.
 */
 
-#ifndef COMMON_H
-#define COMMON_H
-#endif COMMON_H
+#ifndef _COMMON_H_
+#define _COMMON_H_
+
 
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -22,7 +22,8 @@ common header file for web client and server files.
 #include <netdb.h>
 
 
-#define SERVER_PORT 18000      //port to use in server
+#define SERVER_PORT 18000    //port to use in server
+#define HTTP_PORT 80
 
 #define MAXLINE 4096        //max buffer length
 #define SA struct sockaddr
@@ -30,3 +31,5 @@ common header file for web client and server files.
 
 void err_n_die(const char *fmt, ...); //variadic error handling function
 char *bin2hex(const unsigned char *input, size_t len);
+
+#endif

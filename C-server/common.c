@@ -1,5 +1,6 @@
 #include "common.h"
 
+
 void err_n_die(const char *fmt,...){
     int errno_save;
     va_list ap;
